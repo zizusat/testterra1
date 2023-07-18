@@ -13,3 +13,4 @@ resource "azurerm_storage_container" "data" {
   storage_account_name  = "${data.azurerm_storage_account.appstore566565637ss.name}"
   container_access_type = "blob"
 }
+#sadd .
