@@ -1,6 +1,6 @@
-resource "azurerm_resource_group" "testapp" {
+data "azurerm_resource_group" "testapp" {
   name     = "testapp-grp"
-  location = "West Europe"
+  
 }
 resource "azurerm_storage_account" "appstorage" {
   name                     = "testsatya"
