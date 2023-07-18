@@ -53,7 +53,7 @@ jobs:
     #- name: Terraform apply
      # id: apply
      # run: terraform apply -auto-approve
-   
+   #
     - name: Terraform Destroy
       id: destroy
       working-directory: ${{ github.event.inputs.resource }}
