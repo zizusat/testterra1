@@ -1,6 +1,6 @@
 data "azurerm_resource_group" "appgrp2" {
   name     = "SatyaMi2"
-  location = "East US"
+
   
 }
 
