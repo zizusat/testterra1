@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "azurerm" {
-      resource_group_name  = "rg-terraform-github-actions-state"
-      storage_account_name = "terraformgithubactions45"
+      resource_group_name  = "satyaterraform"
+      storage_account_name = "github45"
       container_name       = "tfstate2"
       key                  = "terraform.tfstate"
   }

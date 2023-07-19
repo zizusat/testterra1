@@ -1,16 +1,15 @@
 data "azurerm_resource_group" "appgrp2" {
-  name     = "app-grp"
+  name     = "SatyaMi"
+  location = "East US"
   
 }
 
-data "azurerm_storage_account" "appstore566565637ss" {
-  name                     = "appstore55952111"
- 
+resource "azurerm_storage_account" "appstore566565637ss" {
+    name                     = "appstore566565637"
+  resource_group_name      = "SatyaMi"
+  location                 = "North Europe"
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+  account_kind = "StorageV2"
 }
 
-resource "azurerm_storage_container" "data" {
-  name                  = "data1"
-  storage_account_name  = "${data.azurerm_storage_account.appstore566565637ss.name}"
-  container_access_type = "blob"
-}
-#sadd .
